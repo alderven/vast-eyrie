@@ -1,5 +1,5 @@
 # Общее
-Данный проект содержит автотесты для тестирования сервиса https://vast-eyrie-4711.herokuapp.com/?from_cache=123
+Данный проект содержит автотесты и [результаты тестирования](https://rawgit.com/alderven/vast-eyrie/master/allure-report/index.html) сервиса https://vast-eyrie-4711.herokuapp.com/?from_cache=123
 
 # Тест кейсы и результаты тестирования
 Отчет Allure: https://rawgit.com/alderven/vast-eyrie/master/allure-report/index.html
