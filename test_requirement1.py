@@ -9,7 +9,7 @@ def test_requirement_11(responses):
     with pytest.allure.step('Проверяем коды ответов.'):
         for response in responses:
             code = response.status_code
-            assert code < 500, 'Сервис получил код возврата: {}.Согласно требованию №1.1: "Сервис не должен пятисотить или падать"'.format(code)
+            assert code < 500, 'Сервис получил код возврата: {}. Согласно требованию №1.1: "Сервис не должен пятисотить или падать"'.format(code)
 
 
 @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')

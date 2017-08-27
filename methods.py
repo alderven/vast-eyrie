@@ -25,9 +25,8 @@ def send_alert(msg, config):
     TO = get_recipients(config)
     SUBJECT = 'Оповещение об ошибке'
     TEXT = msg
+    message = '''From: {}\nTo: {}\nSubject: {}\n\n{}'''.format(FROM, TO, SUBJECT, TEXT)
 
-    message = """From: %s\nTo: %s\nSubject: %s\n\n%s
-    """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
@@ -35,9 +34,9 @@ def send_alert(msg, config):
         server.login(config['EMAIL']['login'], config['EMAIL']['Password'])
         server.sendmail(FROM, TO, message)
         server.close()
-        print('successfully sent the mail')
-    except:
-        print('failed to send mail')
+        print('Successfully sent the mail. Recipients: {}'.format(TO))
+    except Exception as e:
+        print('Failed to send mail. Exception: {}'.format(e))
 
 
 def get_recipients(config):
