@@ -1,0 +1,73 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.",
+    "children" : [ {
+      "name" : "Требование №1.2. Сервис должен отвечать всегда в одном формате.",
+      "children" : [ {
+        "name" : "test_requirement_12",
+        "uid" : "b765e1cff732091f",
+        "parentUid" : "8efd6d0afeee0f75dbed779a62deb4cf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1503816881979,
+          "stop" : 1503816881983,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8efd6d0afeee0f75dbed779a62deb4cf"
+    }, {
+      "name" : "Требование №1.1. Сервис не должен пятисотить или падать",
+      "children" : [ {
+        "name" : "test_requirement_11",
+        "uid" : "acc8f7004195fccc",
+        "parentUid" : "0b45abcccb7b85437cc44068681cc5e9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1503816837254,
+          "stop" : 1503816881978,
+          "duration" : 44724
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0b45abcccb7b85437cc44068681cc5e9"
+    } ],
+    "uid" : "1344202159f24ea6952d0e5cea9bcc9f"
+  }, {
+    "name" : "Требование №3. При повторном (2 раза подряд) получении ошибки (ответ \"error\") нужно отсылать алерт.\n* В дополнение можно привязать список сотрудников и в нерабочее время слать уведомления об ошибках только дежурному программисту.",
+    "children" : [ {
+      "name" : "test_requirement_3",
+      "uid" : "314d47367ab9ed74",
+      "parentUid" : "2e97295db0a89ce30172fede37e01998",
+      "status" : "passed",
+      "time" : {
+        "start" : 1503816882396,
+        "stop" : 1503816882398,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2e97295db0a89ce30172fede37e01998"
+  }, {
+    "name" : "Требование №2. Клиент может ждать ответа не более 1 сек (после этого он отвалится по таймауту), но может перезапрашивать значение несколько раз.",
+    "children" : [ {
+      "name" : "test_requirement_2",
+      "uid" : "2ebfb989a422965",
+      "parentUid" : "2bf0e692fd4021f086eb5db06ff0b524",
+      "status" : "passed",
+      "time" : {
+        "start" : 1503816881983,
+        "stop" : 1503816882396,
+        "duration" : 413
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2bf0e692fd4021f086eb5db06ff0b524"
+  } ]
+}

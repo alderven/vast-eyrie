@@ -1,0 +1,89 @@
+{
+  "uid" : "2ebfb989a422965",
+  "name" : "test_requirement_2",
+  "fullName" : "test_requirement2.test_requirement_2",
+  "historyId" : "8794524409436d164390740ba50a71ac",
+  "time" : {
+    "start" : 1503816881983,
+    "stop" : 1503816882396,
+    "duration" : 413
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Делаем запрос с таймаутом 1 сек",
+      "time" : {
+        "start" : 1503816881984,
+        "stop" : 1503816882395,
+        "duration" : 411
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Требование №2. Клиент может ждать ответа не более 1 сек (после этого он отвалится по таймауту), но может перезапрашивать значение несколько раз."
+  }, {
+    "name" : "host",
+    "value" : "AANANYEV-PC"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "thread",
+    "value" : "41756-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_requirement2"
+  }, {
+    "name" : "testClass",
+    "value" : "test_requirement2"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_requirement_2"
+  }, {
+    "name" : "package",
+    "value" : "test_requirement2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ebfb989a422965.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,124 @@
+{
+  "summary" : {
+    "reportName" : "Allure Report",
+    "testRuns" : [ ],
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "time" : {
+      "start" : 1503816837254,
+      "stop" : 1503816882398,
+      "duration" : 45144,
+      "minDuration" : 2,
+      "maxDuration" : 44724,
+      "sumDuration" : 45143
+    }
+  },
+  "environment" : [ ],
+  "suites" : {
+    "total" : 3,
+    "items" : [ {
+      "uid" : "967b46d3abf2ab5af032e78bdc9a0cc7",
+      "name" : "test_requirement1",
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      }
+    }, {
+      "uid" : "acda85e66017df66e4de771326dbee84",
+      "name" : "test_requirement3",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    }, {
+      "uid" : "e73720a8949ae99f8ba4a6a891b99a4a",
+      "name" : "test_requirement2",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    } ]
+  },
+  "history-trend" : [ {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ],
+  "behaviors" : {
+    "total" : 3,
+    "items" : [ {
+      "uid" : "1344202159f24ea6952d0e5cea9bcc9f",
+      "name" : "Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.",
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      }
+    }, {
+      "uid" : "2e97295db0a89ce30172fede37e01998",
+      "name" : "Требование №3. При повторном (2 раза подряд) получении ошибки (ответ \"error\") нужно отсылать алерт.\n* В дополнение можно привязать список сотрудников и в нерабочее время слать уведомления об ошибках только дежурному программисту.",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    }, {
+      "uid" : "2bf0e692fd4021f086eb5db06ff0b524",
+      "name" : "Требование №2. Клиент может ждать ответа не более 1 сек (после этого он отвалится по таймауту), но может перезапрашивать значение несколько раз.",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    } ]
+  },
+  "executors" : [ ],
+  "categories" : {
+    "total" : 1,
+    "items" : [ {
+      "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d",
+      "name" : "Product defects",
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      }
+    } ]
+  },
+  "launches" : [ ]
+}

@@ -1,0 +1,41 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nassert 2 == 1\n +  where 2 = len({'application/json', 'text/html; charset=utf-8'})",
+      "children" : [ {
+        "name" : "test_requirement_12",
+        "uid" : "b765e1cff732091f",
+        "parentUid" : "9eb3eb927471bbd8bb7918b61c117e9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1503816881979,
+          "stop" : 1503816881983,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9eb3eb927471bbd8bb7918b61c117e9b"
+    }, {
+      "name" : "AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nassert 500 < 500",
+      "children" : [ {
+        "name" : "test_requirement_11",
+        "uid" : "acc8f7004195fccc",
+        "parentUid" : "82d25d487f31874cd9f3d3b29da80077",
+        "status" : "failed",
+        "time" : {
+          "start" : 1503816837254,
+          "stop" : 1503816881978,
+          "duration" : 44724
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "82d25d487f31874cd9f3d3b29da80077"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -1,0 +1,128 @@
+{
+  "uid" : "acc8f7004195fccc",
+  "name" : "test_requirement_11",
+  "fullName" : "test_requirement1.test_requirement_11",
+  "historyId" : "56d1f9b717c0dbd6f221a23735fc8a39",
+  "time" : {
+    "start" : 1503816837254,
+    "stop" : 1503816881978,
+    "duration" : 44724
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusDetails" : {
+    "message" : "AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nassert 500 < 500",
+    "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.1. Сервис не должен пятисотить или падать')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_11(responses):\n    \n        with pytest.allure.step('Проверяем коды ответов.'):\n            for response in responses:\n                code = response.status_code\n>               assert code < 500, 'Сервис получил код возврата: {}. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"'.format(code)\nE               AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nE               assert 500 < 500\n\ntest_requirement1.py:12: AssertionError",
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusDetails" : {
+      "message" : "AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nassert 500 < 500",
+      "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.1. Сервис не должен пятисотить или падать')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_11(responses):\n    \n        with pytest.allure.step('Проверяем коды ответов.'):\n            for response in responses:\n                code = response.status_code\n>               assert code < 500, 'Сервис получил код возврата: {}. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"'.format(code)\nE               AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nE               assert 500 < 500\n\ntest_requirement1.py:12: AssertionError",
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "Делаем 10 запросов к сервису",
+      "time" : {
+        "start" : 1503816837256,
+        "stop" : 1503816881915,
+        "duration" : 44659
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверяем коды ответов.",
+      "time" : {
+        "start" : 1503816881915,
+        "stop" : 1503816881918,
+        "duration" : 3
+      },
+      "status" : "failed",
+      "statusDetails" : {
+        "message" : "AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nassert 500 < 500",
+        "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.1. Сервис не должен пятисотить или падать')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_11(responses):\n    \n        with pytest.allure.step('Проверяем коды ответов.'):\n            for response in responses:\n                code = response.status_code\n>               assert code < 500, 'Сервис получил код возврата: {}. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"'.format(code)\nE               AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nE               assert 500 < 500\n\ntest_requirement1.py:12: AssertionError",
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате."
+  }, {
+    "name" : "host",
+    "value" : "AANANYEV-PC"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "Требование №1.1. Сервис не должен пятисотить или падать"
+  }, {
+    "name" : "thread",
+    "value" : "41756-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_requirement1"
+  }, {
+    "name" : "testClass",
+    "value" : "test_requirement1"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_requirement_11"
+  }, {
+    "name" : "package",
+    "value" : "test_requirement1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "acc8f7004195fccc.json",
+  "statusDetailsSafe" : {
+    "message" : "AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nassert 500 < 500",
+    "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.1. Сервис не должен пятисотить или падать')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_11(responses):\n    \n        with pytest.allure.step('Проверяем коды ответов.'):\n            for response in responses:\n                code = response.status_code\n>               assert code < 500, 'Сервис получил код возврата: {}. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"'.format(code)\nE               AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nE               assert 500 < 500\n\ntest_requirement1.py:12: AssertionError",
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : true
+  },
+  "parameterValues" : [ ]
+}

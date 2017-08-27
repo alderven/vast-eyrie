@@ -1,0 +1,110 @@
+{
+  "uid" : "b765e1cff732091f",
+  "name" : "test_requirement_12",
+  "fullName" : "test_requirement1.test_requirement_12",
+  "historyId" : "b4ac3a843b54ca75a505cfa0757fecfe",
+  "time" : {
+    "start" : 1503816881979,
+    "stop" : 1503816881983,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusDetails" : {
+    "message" : "AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nassert 2 == 1\n +  where 2 = len({'application/json', 'text/html; charset=utf-8'})",
+    "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.2. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_12(responses):\n    \n        with pytest.allure.step('Проверяем форматы ответов.'):\n            types = set()\n            for response in responses:\n                types.add(response.headers['Content-Type'])\n>           assert len(types) == 1, 'Форматы ответов: {}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"'.format(types)\nE           AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nE           assert 2 == 1\nE            +  where 2 = len({'application/json', 'text/html; charset=utf-8'})\n\ntest_requirement1.py:24: AssertionError",
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusDetails" : {
+      "message" : "AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nassert 2 == 1\n +  where 2 = len({'application/json', 'text/html; charset=utf-8'})",
+      "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.2. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_12(responses):\n    \n        with pytest.allure.step('Проверяем форматы ответов.'):\n            types = set()\n            for response in responses:\n                types.add(response.headers['Content-Type'])\n>           assert len(types) == 1, 'Форматы ответов: {}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"'.format(types)\nE           AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nE           assert 2 == 1\nE            +  where 2 = len({'application/json', 'text/html; charset=utf-8'})\n\ntest_requirement1.py:24: AssertionError",
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "Проверяем форматы ответов.",
+      "time" : {
+        "start" : 1503816881980,
+        "stop" : 1503816881980,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusDetails" : {
+        "message" : "AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nassert 2 == 1\n +  where 2 = len({'application/json', 'text/html; charset=utf-8'})",
+        "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.2. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_12(responses):\n    \n        with pytest.allure.step('Проверяем форматы ответов.'):\n            types = set()\n            for response in responses:\n                types.add(response.headers['Content-Type'])\n>           assert len(types) == 1, 'Форматы ответов: {}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"'.format(types)\nE           AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nE           assert 2 == 1\nE            +  where 2 = len({'application/json', 'text/html; charset=utf-8'})\n\ntest_requirement1.py:24: AssertionError",
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате."
+  }, {
+    "name" : "host",
+    "value" : "AANANYEV-PC"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "Требование №1.2. Сервис должен отвечать всегда в одном формате."
+  }, {
+    "name" : "thread",
+    "value" : "41756-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_requirement1"
+  }, {
+    "name" : "testClass",
+    "value" : "test_requirement1"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_requirement_12"
+  }, {
+    "name" : "package",
+    "value" : "test_requirement1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b765e1cff732091f.json",
+  "statusDetailsSafe" : {
+    "message" : "AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nassert 2 == 1\n +  where 2 = len({'application/json', 'text/html; charset=utf-8'})",
+    "trace" : "responses = [<Response [200]>, <Response [500]>, <Response [200]>, <Response [200]>, <Response [200]>, <Response [200]>, ...]\n\n    @pytest.allure.feature('Требование №1. Сервис не должен пятисотить или падать. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.story('Требование №1.2. Сервис должен отвечать всегда в одном формате.')\n    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)\n    def test_requirement_12(responses):\n    \n        with pytest.allure.step('Проверяем форматы ответов.'):\n            types = set()\n            for response in responses:\n                types.add(response.headers['Content-Type'])\n>           assert len(types) == 1, 'Форматы ответов: {}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"'.format(types)\nE           AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nE           assert 2 == 1\nE            +  where 2 = len({'application/json', 'text/html; charset=utf-8'})\n\ntest_requirement1.py:24: AssertionError",
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : true
+  },
+  "parameterValues" : [ ]
+}

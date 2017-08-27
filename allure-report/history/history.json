@@ -1,0 +1,80 @@
+{
+  "73e0ac657bf1b448f087b1f8b2042a67" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "314d47367ab9ed74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1503816882396,
+        "stop" : 1503816882398,
+        "duration" : 2
+      }
+    } ]
+  },
+  "56d1f9b717c0dbd6f221a23735fc8a39" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "acc8f7004195fccc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Сервис получил код возврата: 500. Согласно требованию №1.1: \"Сервис не должен пятисотить или падать\"\nassert 500 < 500",
+      "time" : {
+        "start" : 1503816837254,
+        "stop" : 1503816881978,
+        "duration" : 44724
+      }
+    } ]
+  },
+  "b4ac3a843b54ca75a505cfa0757fecfe" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b765e1cff732091f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Форматы ответов: {'application/json', 'text/html; charset=utf-8'}. Согласно требованию №1.2: \"Сервис должен отвечать всегда в одном формате.\"\nassert 2 == 1\n +  where 2 = len({'application/json', 'text/html; charset=utf-8'})",
+      "time" : {
+        "start" : 1503816881979,
+        "stop" : 1503816881983,
+        "duration" : 4
+      }
+    } ]
+  },
+  "8794524409436d164390740ba50a71ac" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ebfb989a422965",
+      "status" : "passed",
+      "time" : {
+        "start" : 1503816881983,
+        "stop" : 1503816882396,
+        "duration" : 413
+      }
+    } ]
+  }
+}
