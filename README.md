@@ -24,7 +24,7 @@
 # Как запускать тесты
 В командной строке выполнить следующую команду:
 ```javascript
-python -m pytest --alluredir report
+python -m pytest --alluredir full_path_to_report_folder
 ```
 # Как генерировать Allure отчет:
 В командной строке выполнить следующую команду:
